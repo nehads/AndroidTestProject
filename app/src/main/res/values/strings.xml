@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AndroidTestProject</string>
+
+    <string name="first_name">First Name:&#160;</string>
+    <string name="last_name">Last Name:&#160;</string>
+    <string name="email">Email:&#160;</string>
+    <string name="desc_profile">Profile picture</string>
+    <string name="name_string">%s %s</string>
+    <string name="retry">Retry</string>
+    <string name="please_try_again">Please try again</string>
+    <plurals name="app_opened_count">
+        <item quantity="one">You have visited %d time</item>
+        <item quantity="other">You have visited %d times</item>
+    </plurals>
+</resources>

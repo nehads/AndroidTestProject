@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_20"
+    android:layout_marginTop="@dimen/margin_20"
+    app:cardCornerRadius="@dimen/margin_8"
+    app:cardElevation="@dimen/margin_10"
+    tools:context=".ui.home.details.DetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red_light"
+        android:paddingHorizontal="@dimen/margin_20"
+        android:paddingVertical="@dimen/margin_20">
+
+        <ImageView
+            android:id="@+id/ivUserImage"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="200dp"
+            android:contentDescription="@string/desc_profile"
+            app:layout_constraintDimensionRatio="W,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvFirstNameLabel"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="@string/first_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivUserImage" />
+
+        <TextView
+            android:id="@+id/tvFirstNameValue"
+            style="@style/RegularText"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tvFirstNameLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvFirstNameLabel"
+            tools:text="Jataya" />
+
+        <TextView
+            android:id="@+id/tvLastNameLabel"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/last_name"
+            app:layout_constraintStart_toStartOf="@id/tvFirstNameLabel"
+            app:layout_constraintTop_toBottomOf="@id/tvFirstNameLabel" />
+
+        <TextView
+            android:id="@+id/tvLastNameValue"
+            style="@style/RegularText"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tvLastNameLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvLastNameLabel"
+            tools:text="Rai" />
+
+        <TextView
+            android:id="@+id/tvEmailLabel"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/email"
+            app:layout_constraintStart_toStartOf="@id/tvFirstNameLabel"
+            app:layout_constraintTop_toBottomOf="@id/tvLastNameLabel" />
+
+        <TextView
+            android:id="@+id/tvEmailValue"
+            style="@style/RegularText"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tvEmailLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvEmailLabel"
+            tools:text="jatay.rai@gmail.com" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
